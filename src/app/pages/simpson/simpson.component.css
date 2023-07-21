@@ -1,4 +1,10 @@
 
+.simpsons-title {
+  font-family: 'Bongo', cursive;
+  font-size: 48px;
+  text-transform: uppercase;
+  display: inline-block;
+}
 
 
 
@@ -21,8 +27,6 @@
 .simpsons-avatar {
   width: 200px;
   height: 250px;
- 
-
   margin: 0 auto;
   display: block;
 }
