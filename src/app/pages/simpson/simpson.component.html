@@ -1,21 +1,12 @@
 <app-navbar></app-navbar>
 <div class="text-center" style="color: rgb(4, 121, 255);">
-  <h2>Listado de Personajes de Los Simpson</h2>
+  <h2>Personajes de Los Simpson</h2>
 </div>
 <br> 
 
-<div class="container">
-  <div class="row card-deck">
-    <div *ngFor="let personaje of personajes" class="col-md-4">
-      <div class="card personaje-card mb-4"> <!-- Agrega la clase 'mb-4' para el espacio separado -->
-        <div class="card-header">
-          <h3 class="card-title text-center">{{ personaje.Nombre }}</h3>
-        </div>
-        <div class="card-body d-flex justify-content-center align-items-center">
-          <img [src]="personaje.Imagen" class="card-img-top" alt="{{ personaje.Nombre }}">
-        </div>
-        <hr>
-      </div>
-    </div>
+
+  <div class="simpsons-container">
+    <div class="simpsons-card" *ngFor="let personaje of personajes">
+      <img [src]="personaje.Imagen" alt="{{ personaje.Nombre }}" class="simpsons-avatar">
+      <h4 class="simpsons-name">{{ personaje.Nombre }}</h4>
   </div>
-</div>
